@@ -1,0 +1,38 @@
+GET http://localhost:3000/Carreras HTTP/1.1
+
+###
+GET http://localhost:3000/Carreras/2 HTTP/1.1
+
+###
+POST http://localhost:3000/Carreras/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Ingeniería en Logística",
+    "años": 4.5,
+    "creditos": 260,
+    "especialidades": [
+        {
+            "materias": [
+                "Ingeniería Económica",
+                "Innovación",
+                "Comercio Internacional",
+                "Geografía para el Transporte",
+                "Formulación y Evaluación de Proyectos",
+                "Gestión de Proyectos"
+            ]
+        }
+    ]
+}
+
+###
+PUT http://localhost:3000/Carreras/7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Ingeniería Mecatronica"
+}
+
+###
+DELETE http://localhost:3000/Carreras/8 HTTP/1.1
+
